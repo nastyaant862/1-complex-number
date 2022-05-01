@@ -27,20 +27,6 @@ Complex Complex::Devision(Complex n) {
 	ch_im = this->re * (-n.im) + this->im * n.re;
 	zn = n.re * n.re + n.im * n.im;
 	return Complex{ ch_re/zn, ch_im/zn };
-	/*
-	if (Nod(ch_re, zn) != 0) {
-		cout << ch_re / Nod(ch_re, zn) << "/" << zn / Nod(ch_re, zn);
-	}
-	else {
-		cout << ch_re << "/" << zn;
-	}
-
-	if (Nod(ch_im, zn) != 0) {
-		cout << " + " << ch_im / Nod(ch_im, zn) << "/" << zn / Nod(ch_im, zn) << "i" << endl;
-	}
-	else {
-		cout << " + " << ch_im << "/" << zn << " i" << endl;
-	}*/
 	
 }
 

@@ -55,19 +55,19 @@ int main() {
 			del = del.Devision(mass[i]);
 		}
 
-		cout << "Сумма чисел: ";
+		cout << "Sum of numbers: ";
 		summa.print();
 		cout << endl;
 
-		cout << "Разность чисел: ";
+		cout << "Number difference: ";
 		razn.print();
 		cout << endl;
 
-		cout << "Произведение чисел: ";
+		cout << "Product of numbers: ";
 		umnoj.print();
 		cout << endl;
 
-		cout << "Частное чисел: ";
+		cout << "Quotient of numbers: ";
 		del.print();
 		cout << endl;
 
@@ -85,9 +85,9 @@ int main() {
 			}
 		}
 
-		cout << "Число с наибольшим модулем: ";
+		cout << "The number with the largest modulus: ";
 		mass[indmaxmod].print();
-		cout << "Его длина: " << modulemass[indmaxmod] << endl;
+		cout << "It's length: " << modulemass[indmaxmod] << endl;
 
 		delete[] mass;
 		delete[] modulemass;
