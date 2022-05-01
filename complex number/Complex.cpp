@@ -43,3 +43,8 @@ Complex Complex::Devision(Complex n) {
 	}*/
 	
 }
+
+double Complex::Module() {
+	return (sqrt(pow(this->re, 2) + pow(this->im, 2)));
+}
+

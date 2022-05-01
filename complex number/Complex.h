@@ -3,7 +3,9 @@
 
 using namespace std;
 
-struct Complex {
+class Complex {
+
+public:
 	double re;
 	double im;
 
@@ -11,6 +13,7 @@ struct Complex {
 	Complex Subtract(Complex n);
 	Complex Multi(Complex n);
 	Complex Devision(Complex n);
+	double Module();
 	void print();
 };
 

@@ -23,7 +23,7 @@ int main() {
 	else
 	{	
 		getline(f, cntofnums); 
-		int n = stoi(cntofnums);
+		n = stoi(cntofnums);
 		Complex* mass = new Complex[n];
 
 		for (i = 0; i < n; i++) {
@@ -45,7 +45,6 @@ int main() {
 		umnoj = mass[0];
 		for (i = 1; i < n; i++) {
 			umnoj = umnoj.Multi(mass[i]);
-			umnoj.print();
 		}
 		cout << endl;
 
@@ -72,7 +71,26 @@ int main() {
 		del.print();
 		cout << endl;
 
+		double* modulemass = new double[n];
+		for (int i = 0; i < n; i++) {
+			modulemass[i] = mass[i].Module();
+		}
+
+		double maxmodule = 0;
+		int indmaxmod;
+		for (int i = 0; i < n; i++) {
+			if (modulemass[i] > maxmodule) {
+				maxmodule = modulemass[i];
+				indmaxmod = i;
+			}
+		}
+
+		cout << "Число с наибольшим модулем: ";
+		mass[indmaxmod].print();
+		cout << "Его длина: " << modulemass[indmaxmod] << endl;
+
 		delete[] mass;
+		delete[] modulemass;
 	}
 	
 }
