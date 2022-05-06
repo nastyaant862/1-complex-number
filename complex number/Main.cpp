@@ -77,12 +77,14 @@ int main() {
 		}
 
 		double maxmodule = 0;
-		int indmaxmod;
+		int indmaxmod = 0;
+
 		for (int i = 0; i < n; i++) {
 			if (modulemass[i] > maxmodule) {
 				maxmodule = modulemass[i];
 				indmaxmod = i;
 			}
+			
 		}
 
 		cout << "The number with the largest modulus: ";
