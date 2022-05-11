@@ -6,14 +6,14 @@
 
 using namespace std;
 
-int main() {
+void cmpExample() {
 	setlocale(LC_ALL, "ru");
 	Complex a{}, summa{}, razn{}, umnoj{}, del{};
 
 	string path = "Text.txt";
 	string str1, str2, cntofnums, str;
 	ifstream f;
-	int i,n;
+	int i, n;
 
 	f.open(path);
 	if (!f.is_open())
@@ -21,8 +21,8 @@ int main() {
 		cout << "Ошибка открытия файла." << endl;
 	}
 	else
-	{	
-		getline(f, cntofnums); 
+	{
+		getline(f, cntofnums);
 		n = stoi(cntofnums);
 		Complex* mass = new Complex[n];
 
@@ -84,7 +84,7 @@ int main() {
 				maxmodule = modulemass[i];
 				indmaxmod = i;
 			}
-			
+
 		}
 
 		cout << "The number with the largest modulus: ";
@@ -94,5 +94,9 @@ int main() {
 		delete[] mass;
 		delete[] modulemass;
 	}
-	
+
+}
+
+int main() {
+	cmpExample();
 }

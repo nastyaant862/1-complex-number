@@ -9,7 +9,7 @@ void Complex::print() {
 
 
 Complex Complex::Sum(Complex n) {
-	return Complex { this->re + n.re, this->im + n.im };
+	return Complex ( this->re + n.re, this->im + n.im );
 }
 
 Complex Complex::Subtract(Complex n) {
